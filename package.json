@@ -1,0 +1,24 @@
+{
+  "name": "jf",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Julia Flejterska",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "core-js": "^3.20.2",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "juliaflejterska"
+  },
+  "description": ""
+}
