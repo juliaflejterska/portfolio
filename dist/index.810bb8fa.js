@@ -1,8 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
-const navDots = document.querySelectorAll(".nav2-item");
-const jf = document.querySelector(".h1");
+const year = document.querySelector(".year");
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -14,13 +13,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-function changeText() {
-    jf.style.color = "#fff333";
-    jf.innerHTML = "JULIA FLEJTERSKA";
-}
-function changeTextTimeout() {
-    setTimeout(changeText, 700);
-}
-jf.addEventListener("mouseenter", changeTextTimeout);
+const now = new Date();
+const yearNow = now.getFullYear();
+year.innerHTML = yearNow;
 
 //# sourceMappingURL=index.810bb8fa.js.map

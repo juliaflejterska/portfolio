@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(19, 18, 18);
+}
+
 html {
   font-size: 70%;
   font-family: "Open Sans", sans-serif;
@@ -19,43 +26,11 @@ a {
   text-decoration: none;
 }
 
-.h1div h1 {
-  font-size: 10rem;
-  overflow: hidden;
-  border-right: 0.15em solid white;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-.pizza {
-  color: #fff333;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-
 .header {
   position: sticky;
   top: 0;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
+  z-index: 1000000;
 }
 
 .navbar {
@@ -87,57 +62,246 @@ a {
 
 .nav-item {
   margin-left: 7rem;
+  display: flex;
+  gap: 10px;
 }
 
 .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: white;
 }
 
 .nav-link:hover {
-  color: #054a91;
+  color: rgb(213, 2, 255);
 }
 
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #fff333;
 }
 
-/* //////////////////////////////////////// */
-
-.navbar2 {
-  position: fixed;
-  right: 32px;
-  top: 50%;
-  transform: translateY(-50%);
+.nav-logo-j {
+  color: rgb(213, 2, 255);
 }
 
-.navbar2 a {
-  display: block;
-  border-radius: 50%;
-  border: 1px solid white;
-  width: 20px;
-  height: 20px;
-  margin: 20px 0;
-  text-indent: -999px;
-  overflow: hidden;
-  position: relative;
-}
-
-.navbar2 a:hover::after,
-.navbar2 a.active::after {
-  height: 100%;
+.nav-logo-f {
+  color: rgb(255, 255, 255);
 }
 
 section {
   height: 100vh;
-  background: black;
   color: white;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  color: white;
+  background-color: rgb(19, 18, 18);
+  height: 10vh;
+  font-size: 1.2vw;
+  text-align: center;
+  padding: 2%;
+}
+
+/*/////////////////////////*/
+
+.home {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 2px;
+  margin-top: -200px;
+}
+
+h1 {
+  background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 10vw;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5vw;
+}
+
+h2 span {
+  color: rgb(213, 2, 255);
+}
+
+/*/////////////////////////*/
+
+.about {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.about-item {
+  margin: 4em 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.odd-item {
+  color: rgb(213, 2, 255);
+}
+
+.odd-item:hover {
+  color: white;
+}
+
+.even-item:hover {
+  color: rgb(213, 2, 255);
+}
+
+.about-item span {
+  font-size: 2.3vw;
+}
+
+.location-underline {
+  text-decoration: underline rgb(213, 2, 255);
+}
+
+/*/////////////////////////*/
+
+.skills {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+.skills div i:hover {
+  font-size: 8em;
+  color: rgb(213, 2, 255);
+}
+
+.skill-ts {
+  font-size: 6em;
+}
+
+.skill-ts:hover {
+  font-size: 7em;
+  color: rgb(213, 2, 255);
+}
+
+/*/////////////////////////*/
+
+.projects {
+  display: flex;
+}
+
+.project {
+  position: relative;
+  margin: 10px 30px;
+  width: 220px;
+  height: 220px;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.project * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.project img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  object-fit: contain;
+  height: 100%;
+}
+
+.project figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+
+.project h2,
+.project p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.project h2 {
+  font-size: 1.3em;
+  color: rgb(213, 2, 255);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.project p {
+  font-size: 0.8em;
+}
+
+.project a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.project-code {
+  background-color: rgb(213, 2, 255);
+  color: black;
+}
+
+.project:hover img,
+.project.hover img {
+  width: 55%;
+  right: -10%;
+}
+
+.project:hover figcaption h2,
+.project.hover figcaption h2,
+.project:hover figcaption p,
+.project.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*/////////////////////////*/
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -145,12 +309,12 @@ section {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(19, 18, 18);
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    height: 90%;
+    height: 93%;
   }
 
   .nav-menu.active {
@@ -158,7 +322,8 @@ section {
   }
 
   .nav-item {
-    margin: 2.5% 0;
+    margin: 2% 0;
+    gap: 20px;
   }
 
   .nav-link {
@@ -180,6 +345,53 @@ section {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+
+  h2 {
+    font-size: 2.5vw;
+  }
+
+  .about {
+    gap: 1em;
+  }
+
+  .about-item {
+    margin: 3em;
+    gap: 3vw;
+  }
+
+  .about-item span {
+    font-size: 4vw;
+  }
+
+  .skills {
+    margin-top: 3em;
+    flex-direction: column;
+  }
+
+  .skills div i {
+    font-size: 5em;
+  }
+
+  .projects {
+    margin-top: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .project {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 2vw;
+    z-index: 10000000;
   }
 }
 
