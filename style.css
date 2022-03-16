@@ -273,15 +273,12 @@ h2 span {
   color: black;
 }
 
-.project:hover img,
-.project.hover img {
+.project:hover img {
   width: 55%;
   right: -10%;
 }
 .project:hover figcaption h2,
-.project.hover figcaption h2,
-.project:hover figcaption p,
-.project.hover figcaption p {
+.project:hover figcaption p {
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
   opacity: 1;
@@ -372,6 +369,16 @@ h2 span {
   .project {
     width: 200px;
     height: 200px;
+  }
+  .project img {
+    width: 55%;
+    right: -10%;
+  }
+  .project figcaption h2,
+  .project figcaption p {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 
   footer {
