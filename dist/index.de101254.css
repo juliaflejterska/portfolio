@@ -288,6 +288,11 @@ h2 span {
 
 .project p {
   font-size: 0.8em;
+  background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .project a {
