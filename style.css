@@ -197,14 +197,6 @@ h2 span {
   gap: 3vw;
 }
 
-.skills div i {
-  background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-}
-
 .skills div i:hover {
   font-size: 8em;
   color: rgb(213, 2, 255);
@@ -212,11 +204,6 @@ h2 span {
 
 .skill-ts {
   font-size: 6em;
-  background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .skill-ts:hover {
@@ -239,14 +226,6 @@ h2 span {
   width: 220px;
   display: flex;
   justify-content: center;
-}
-
-.github div i {
-  background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .github div i:hover {
@@ -449,11 +428,6 @@ h2 span {
 
   .github div i {
     font-size: 0.8em;
-    background-image: url(https://media4.giphy.com/media/bVpEhRITfLd72/giphy.gif?cid=790b76118ca5dedce25623a9f2b7afdcc832933b09bf143e&rid=giphy.gif&ct=g);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
   }
 
   .projects {
