@@ -329,13 +329,14 @@ h2 span {
     position: fixed;
     left: -100%;
     top: 5rem;
+    padding-bottom: 5rem;
     flex-direction: column;
     background-color: rgb(19, 18, 18);
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    height: 93%;
+    height: 100%;
   }
 
   .nav-menu.active {
