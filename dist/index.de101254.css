@@ -144,6 +144,10 @@ h2 span {
   color: rgb(213, 2, 255);
 }
 
+.home-contact {
+  display: none;
+}
+
 /*/////////////////////////*/
 
 .about {
@@ -373,6 +377,12 @@ h2 span {
 
   h2 {
     font-size: 2.5vw;
+  }
+
+  .home-contact {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
   }
 
   .about {
